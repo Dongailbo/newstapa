@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="뉴스타파 20대 국회의원 정치후원금">
+    <meta property="og:url" content="http://pages.newstapa.org/n2002">
+    <meta property="og:site_name" content="뉴스타파 20대 국회의원 정치후원금">
+    <meta property="og:description" content="뉴스타파에서 20대 국회의원의 역대 4년간 후원금을 분석했습니다. 국회의원들은 후원금을 얼마나, 누구에게 받았을까요? 궁금한 국회의원을 검색해 내역을 살펴보세요.">
+    <meta property="og:image" content="img/n2002/static/thumb.png">
+    <link rel="shortcut icon" href="img/n2002/static/favicon.ico">
+    <title>뉴스타파 20대 국회의원 정치후원금</title>
+    <link rel="stylesheet" href="css/n2002/multiselect.css">
+    <link rel="stylesheet" href="css/n2002/style.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+		$(document).ready(function() {
+			$(".ranking_tab_title li").click(function() {
+				var idx = $(this).index();
+				$(".ranking_tab_title li").removeClass("on");
+				$(".ranking_tab_title li").eq(idx).addClass("on");
+				$(".ranking_tab_cont > div").hide();
+				$(".ranking_tab_cont > div").eq(idx).show();
+			})
+
+
+			$(".the21st_tab_title li").click(function() {
+				var idx = $(this).index();
+				$(".the21st_tab_title li").removeClass("on");
+				$(".the21st_tab_title li").eq(idx).addClass("on");
+				$(".the21st_tab_cont > div").hide();
+				$(".the21st_tab_cont > div").eq(idx).show();
+			})
+		});
+  </script>
+</head>
+<body>
+	<!-- HEADER : s-->
+    <header class="header">
+        <a href="https://newstapa.org/" target="_blank">
+            <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/logo.svg" alt="Newstapa logo" class="header__logo">
+        </a>
+    </header>
+	<!-- HEADER : e-->
+
+	<!-- CONTENTS : s-->
+    <div class="main">
+        <div>
+            <img src="img/n2002/static/mainicon.png" alt="아이콘" class="main-icon">
+            <h1 class="title">20대 국회의원 정치후원금</h1>
+            <p class="main-paragraph">뉴스타파에서 20대 국회의원의 역대 4년간 후원금을 분석했습니다. 국회의원들은 후원금을 얼마나, 누구에게 받았을까요? 궁금한 국회의원을 검색해 내역을 살펴보세요.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div id="app">
+			<div class="canvas">
+				<p class="canvas-title">조회할 국회의원을 선택하세요</p> 
+				<!-- 국회의원 이름 검색 : s -->
+				<div tabindex="-1" class="multiselect">
+					<div class="multiselect__select"></div>  
+					<div class="multiselect__tags">
+						<div class="multiselect__tags-wrap" style="display: none;"></div>
+						<div class="multiselect__spinner" style="display: none;"></div> 
+						<input name="" type="text" autocomplete="nope" placeholder="국회의원 이름을 입력하세요" tabindex="0" class="multiselect__input" style="width: 0px; position: absolute; padding: 0px;"><span class="multiselect__placeholder">국회의원 이름을 입력하세요</span>
+					</div> 
+					<div tabindex="-1" class="multiselect__content-wrapper" style="max-height: 200px; display: none;">
+						<ul class="multiselect__content" style="display: inline-block;">
+							<li class="multiselect__element"><span data-select=" " data-selected="선택됨" data-deselect="선택을 취소하려면 클릭하세요" class="multiselect__option multiselect__option--highlight"><span>강병원 | 더불어민주당 | 은평구을</span></span> <!----></li>
+							<li style="display: none;"><span class="multiselect__option"><span>검색 결과가 없습니다.</span></span></li> 
+							<li style="display: none;"><span class="multiselect__option">List is empty.</span></li> 
+						</ul>
+					</div>
+				</div> 
+				<!-- 국회의원 이름 검색 : e -->
+
+				<!-- 후원금순위 : s -->
+				<div>
+					<div class="canvas-mini">
+						<div class="canvas-box canvas-box-border">
+							<p class="minititle">2016년 국회의원 후원금 순위</p> 
+							<div>
+								<ul class="ranking_tab_title">
+									<li>2016년</li>
+									<li>2017년</li>
+									<li>2018년</li>
+									<li class="on">2019년</li>
+								</ul>
+								<div class="ranking_tab_cont">
+									<!--16년 순위 : s -->
+									<div>
+										<table class="rankTable">
+											<thead>
+												<th class="rankTable-center" colspan="2">순위</th>
+												<th class="rankTable-center">이름</th>
+												<th class="rankTable-center">정당</th>
+												<th class="rankTable-center">선거구</th>
+												<th class="rankTable-number">금액</th>
+											</thead> 
+											<tbody>
+												<tr>
+													<td class="rankTable-rank">1</td>
+													<td class="rankTable-center"><img src="http://pages.newstapa.org/n2002/static/img/박주선.jpeg" alt="photo" class="rankTable-photo"></td>
+													<td class="rankTable-name">박주선</td>
+													<td class="rankTable-center">민생당</td>
+													<td class="rankTable-center">광주 동구남구을</td>
+													<td class="rankTable-number">3억 4,255만 9,489원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--16년 순위 : e -->
+
+									<!--17년 순위 : s -->
+									<div>
+										<table class="rankTable">
+											<thead>
+												<th class="rankTable-center" colspan="2">순위</th>
+												<th class="rankTable-center">이름</th>
+												<th class="rankTable-center">정당</th>
+												<th class="rankTable-center">선거구</th>
+												<th class="rankTable-number">금액</th>
+											</thead> 
+											<tbody>
+												<tr>
+													<td class="rankTable-rank">1</td>
+													<td class="rankTable-center"><img src="http://pages.newstapa.org/n2002/static/img/박주민.jpeg" alt="photo" class="rankTable-photo"></td>
+													<td class="rankTable-name">박주민</td>
+													<td class="rankTable-center">더불어민주당</td>
+													<td class="rankTable-center">서울 은평구갑</td>
+													<td class="rankTable-number">3억 4,858만 921원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--17년 순위 : e -->
+									
+									<!--18년 순위 : s -->
+									<div>
+										<table class="rankTable">
+											<thead>
+												<th class="rankTable-center" colspan="2">순위</th>
+												<th class="rankTable-center">이름</th>
+												<th class="rankTable-center">정당</th>
+												<th class="rankTable-center">선거구</th>
+												<th class="rankTable-number">금액</th>
+											</thead> 
+											<tbody>
+												<tr>
+													<td class="rankTable-rank">1</td>
+													<td class="rankTable-center"><img src="http://pages.newstapa.org/n2002/static/img/노웅래.jpeg" alt="photo" class="rankTable-photo"></td>
+													<td class="rankTable-name">노웅래</td>
+													<td class="rankTable-center">더불어민주당</td>
+													<td class="rankTable-center">서울 마포구갑</td>
+													<td class="rankTable-number">3억 2,379만 3,977원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--18년 순위 : e -->
+
+									<!--19년 순위 : s -->
+									<div class="on">
+										<table class="rankTable">
+											<thead>
+												<th class="rankTable-center" colspan="2">순위</th>
+												<th class="rankTable-center">이름</th>
+												<th class="rankTable-center">정당</th>
+												<th class="rankTable-center">선거구</th>
+												<th class="rankTable-number">금액</th>
+											</thead> 
+											<tbody>
+												<tr>
+													<td class="rankTable-rank">1</td>
+													<td class="rankTable-center"><img src="http://pages.newstapa.org/n2002/static/img/백승주.jpeg" alt="photo" class="rankTable-photo"></td>
+													<td class="rankTable-name">백승주</td>
+													<td class="rankTable-center">미래한국당</td>
+													<td class="rankTable-center">경북 구미시갑</td>
+													<td class="rankTable-number">1억 7,555만 7,676원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--19년 순위 : e -->
+								</div>
+							</div>
+							<p class="remark-except">※ 2018년, 2017년, 2016년도는 공직선거가 있는 해로서 평년 모금액(1억 5천만원)의 2배인 3억원까지 모금 가능</p>
+						</div> 
+						<div class="canvas-box popup">
+							<p class="paragraph">데이터 : 최윤원, 임송이 | 데이터 시각화 : 임송이 </p>
+						</div>
+					</div>
+				</div> 
+				<!-- 후원금순위 : e -->
+
+				<!-- 국회의원상세보기 : s -->
+				<div class="canvas-mini member-detail" style="display: none;">
+					<div class="canvas-box canvas-box-border" style="text-align: center;">
+						<img src="http://pages.newstapa.org/n2002/static/img/백승주.jpeg" alt="photo" class="idPhoto idPhoto-mirae">
+						<p class="minititle">백승주</p> 
+						<p class="remark mirae">미래한국당 | 경북 구미시갑 </p> 
+						<p class="remark">후원금 총액</p> 
+						<p class="number">6억 7,835만 7,151원</p>
+					</div> 
+					<div class="canvas-box canvas-box-border">
+						<p class="minititle">4년간 후원금 변화</p> 
+						<ul class="slct">
+							<li class="slct-li slct-select">
+								<input type="radio" value="total"> <label for="pickTotal">전체후원금</label>
+							</li> 
+							<li class="slct-li">
+								<input type="radio" value="high"> <label for="pickHigh">연간 300만원 이상</label>
+							</li>
+						</ul> 
+						<p class="remark">
+							<span style="color: rgb(244, 204, 0);">■ 선택한 의원의 후원금</span> 
+							<span style="color: rgb(204, 204, 204);">■ 1인당 평균 후원금</span>
+						</p> 
+						<div id="barCanvas">
+							<!-- 그래프-->
+						</div> 
+						<p class="remark-except">※ 2018년, 2017년, 2016년도는 공직선거가 있는 해로서 평년 모금액(1억 5천만원)의 2배인 3억원까지 모금 가능</p>
+					</div> 
+					<div class="canvas-box canvas-box-border">
+						<p class="minititle">2019년 300만 원 초과 후원자 명단</p> 
+						<p class="remark">클릭하면 후원자 세부 정보를 볼 수 있습니다.</p> 
+						<div>
+							<ul class="the21st_tab_title">
+								<li>2016년</li>
+								<li>2017년</li>
+								<li>2018년</li>
+								<li class="on">2019년</li>
+							</ul>
+							<div class="the21st_tab_cont">
+								<!--16년 : s -->
+								<div>
+									<p class="remark"><span style="color: rgb(68, 0, 255);">■ 21대 총선 출마자</span></p> 
+									<p class="error-text" style="display: none;">검색 결과가 없습니다 </p>
+									<div id="bubbleCanvas"><!--원형--></div>
+								</div>
+								<!--16년 : e -->
+
+								<!--17년 : s -->
+								<div>
+									<p class="remark"><span style="color: rgb(68, 0, 255);">■ 21대 총선 출마자</span></p> 
+									<p class="error-text" style="display: none;">검색 결과가 없습니다 </p>
+									<div id="bubbleCanvas"><!--원형--></div>
+								</div>
+								<!--17년 : e -->
+
+								<!--18년 : s -->
+								<div>
+									<p class="remark"><span style="color: rgb(68, 0, 255);">■ 21대 총선 출마자</span></p> 
+									<p class="error-text" style="display: none;">검색 결과가 없습니다 </p>
+									<div id="bubbleCanvas"><!--원형--></div>
+								</div>
+								<!--18년 : e -->
+
+								<!--19년 : s -->
+								<div class="on">
+									<p class="remark"><span style="color: rgb(68, 0, 255);">■ 21대 총선 출마자</span></p> 
+									<p class="error-text" style="display: none;">검색 결과가 없습니다 </p>
+									<div id="bubbleCanvas"><!--원형--></div>
+								</div>
+								<!--19년 : e -->
+							</div>
+						</div>
+					</div>
+
+					<!-- 21대 총선 출마자 상세보기 : s -->
+					<div style="display: none;">
+						<div class="canvas-box canvas-box-border popup">
+							<p class="minititle">후원자 정보</p> 
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="tbold">이름</td> 
+										<td>김진구</td>
+									</tr> 
+									<tr>
+										<td class="tbold">총 후원금 금액 </td> 
+										<td>5,000,000 원</td>
+									</tr> 
+									<tr>
+										<td class="tbold">직업</td> 
+										<td>자영업</td>
+									</tr> 
+									<tr>
+										<td class="tbold">주소</td> 
+										<td>부산광역시 동구 초량중로</td>
+									</tr> 
+								</tbody>
+							</table>
+						</div>
+
+						<div class="canvas-box canvas-box-border popup">
+							<p class="minititle"><strong>김진구</strong> 후원자가 후원한 의원 명단</p> 
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="tbold">후원연도</td> 
+										<td class="tbold">정당</td> 
+										<td class="tbold">선거구</td> 
+										<td class="tbold">국회의원</td> 
+										<td class="tbold">금액</td>
+									</tr> 
+									<tr>
+										<td>2017</td> 
+										<td>미래한국당</td> 
+										<td>구미시갑</td> 
+										<td>백승주</td> 
+										<td>5,000,000원</td>
+									</tr>
+									<tr>
+										<td>2018</td> 
+										<td>미래한국당</td> 
+										<td>구미시갑</td> 
+										<td>백승주</td> 
+										<td>5,000,000원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- 21대 총선 출마자 상세보기 : e-->
+
+					<div class="canvas-box canvas-box-border popup">
+						<p class="paragraph">데이터 : 최윤원, 임송이 | 데이터 시각화 : 임송이 </p>
+					</div> 
+					<div class="canvas-box popup close"><p class="close-title">처음으로 돌아가기</p></div>
+				</div>
+				<!-- 국회의원상세보기 : e -->
+			</div>
+		</div>
+	</div>
+	<!-- CONTENTS : e-->
+
+	<!-- FOOTER : s-->
+    <footer class="footer">
+        <div class="footer__box">
+            <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/logo-bright.svg" alt="logo white version" class="footer__logo">
+            <div class="footer__info">
+                <div class="footer__info__margin">
+                    <ul>
+                        <li>
+                            <a href="https://jebo.newstapa.org">제보</a>
+                            <span class="sep">|</span>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/forms/qSkAChcxDfPNcsgj2">인터뷰, 강의, 견학 요청</a>
+                            <span class="sep">|</span>
+                        </li>
+                        <li>
+                            <a href="https://kcij.org/contact">제휴, 협력 문의</a>
+                            <span class="sep">|</span>
+                        </li>
+                        <li>
+                            <a href="https://download.newstapa.org/common/html/terms5.html">청소년 보호정책</a>
+                            <span class="sep">|</span>
+                        </li>
+                        <li>
+                            <a href="https://kcij.org/faq">자주 묻는 질문(FAQ)</a>
+                            <span class="sep">|</span>
+                        </li>
+                        <li>
+                            <a href="https://newstapa.org/using">콘텐츠 사용원칙</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info__margin">
+                    <p>서울특별시 중구 퇴계로 212-13(04625)</p>
+                    <p>사업자등록번호 : 117-82-66835 | 인터넷신문등록번호 : 서울,아02778 (2013년 8월 21일)</p>
+                    <p>대표자: 김용진 | 발행인/편집인:김용진 | 개인정보관리 책임자 : 김성근</p>
+                    <p> 전화 : 02-2038-0977 팩스번호 : 02-2038-0978 제보 전화 : 02-2038-8029 | webmaster@newstapa.org</p>
+                </div>
+                <div class="footer__info__margin">
+                    <p>Copyright © KCIJ, All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="footer__keep">
+                <div class="footer__social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/NEWSTAPA">
+                                <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/social/icon-follow-facebook.svg" alt="facebook logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/newstapa">
+                                <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/social/icon-follow-twitter.svg" alt="twitter logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://story.kakao.com/ch/newstapa">
+                                <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/social/icon-follow-kakaostory.svg" alt="kakaostory logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/newstapa">
+                                <img src="https://storage.googleapis.com/media.newstapa.org/static/bundle/korean/assets/img/social/icon-follow-youtube.svg" alt="youtube logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!-- FOOTER : e-->
+
+</body>
+</html>
